@@ -13,7 +13,7 @@ public:
     int countPrimes(int n) {
         if(n == 0 || n == 1 || n == 2){ return 0;}
         set<int> number;
-        for(int i = 2 ; i < n; i++ ){ // Set for number 2 to N
+        for(int i = 2 ; i < n; i++ ){ // Set for number 2 to N - 1
             number.insert(i);
         }
 
@@ -37,16 +37,14 @@ public:
         vector<bool> isPrime(n, true);
         isPrime[0] = false;
         isPrime[1] = false;
-        int count = 0;
         for(int i = 2; i * i < n; i++){
             if(isPrime[i]){
                 for(int j = i * i; j < n; j += i){
                     isPrime[j] = false;
                 }
-            }else{count++;}
+            }
         }
-        // return count(isPrime.begin(), isPrime.end(), true);
-        return count;
+        return count(isPrime.begin(), isPrime.end(), true);
     }
 };
 
