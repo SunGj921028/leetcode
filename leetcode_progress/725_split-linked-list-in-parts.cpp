@@ -40,7 +40,9 @@ public:
         ListNode *prev = nullptr;
         temp = head;
         for(int i = 0 ; i < k; i++){
+            //! create the i-th part
             ListNode * newPart = temp;
+            //! calculate size of i-th part
             int currentSize = splitSize;
             if(remainderExtraSize > 0){
                 currentSize++;
@@ -57,6 +59,7 @@ public:
                 count++;
             }
 
+            //! cut off the rest of linked list
             if(prev != nullptr){
                 prev->next = nullptr;
             }
