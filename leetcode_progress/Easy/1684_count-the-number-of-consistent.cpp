@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//? https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
+
 class Solution {
 public:
     int countConsistentStrings(string allowed, vector<string>& words) {
