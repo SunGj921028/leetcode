@@ -31,6 +31,7 @@ public:
             cnt += (right - left + 1);
             right++;
         }
+        return cnt;
     }
 };
 
