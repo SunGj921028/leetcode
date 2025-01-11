@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "*.embeddedhtml": "html",
+        "*.ejs": "html",
+        "*.vue": "vue",
+        "*.css": "tailwindcss",
+        "ostream": "cpp"
+    }
+}
